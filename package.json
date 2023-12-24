@@ -1,0 +1,14 @@
+{
+  "name": "bible-verse-generation",
+  "version": "1.0.0",
+  "description": "This is a bible verse generator wen application for ffmi youth group",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

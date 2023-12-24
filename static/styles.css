@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kurale&display=swap");
+body {
+  background-size: cover;
+}
+
+.welcome-message {
+  font-size: clamp(2.5rem, 2.6vw, 2.7rem);
+  line-height: 2.5rem;
+  font-family: "Kurale", serif;
+  letter-spacing: 10px;
+  margin-bottom: 2rem;
+}
+
+.main-quote-container {
+  width: 85%;
+  height: 25rem;
+  border-radius: 1rem;
+  background-color: hsla(260, 4%, 85%, 0.1);
+  margin: 0 auto;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.main-random-quote-container {
+  width: 85%;
+  height: 25rem;
+  border-radius: 1rem;
+  background-color: hsla(260, 4%, 85%, 0.1);
+  margin: 0 auto;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button.next-quote {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(246, 248, 255, 0.4);
+  margin: 0 auto;
+}
+button.next-quote:hover, button.next-quote :active {
+  transition: background-color 0.5s;
+  background-color: rgba(246, 248, 255, 0.8);
+}
+
+#text, #random-text {
+  font-size: clamp(1.1rem, 1.15vw, 1.2rem);
+  font-family: "Kurale", serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+#chapter, #random-chapter {
+  font-size: clamp(2rem, 2.15vw, 2.2rem);
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
+
+.btn-container {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.75rem 0.75rem;
+  background-color: hsla(260, 4%, 85%, 0.1);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+#nextstepbtn {
+  font-family: "Kurale", serif;
+  font-size: clamp(0.8125rem, 0.82vw, 0.825rem);
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-weight: 700;
+  width: 7rem;
+  background-color: rgba(34, 9, 122, 0.3);
+  letter-spacing: 1px;
+}
+@media (min-width: 1100px) {
+  #nextstepbtn {
+    font-size: clamp(1.05rem, 1.1vw, 1.15rem);
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+}
+.animation-settings {
+  animation: slideInFromRight 0.5s ease-in-out;
+}
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=styles.css.map */
